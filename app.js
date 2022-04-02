@@ -40,10 +40,10 @@ app.post("/", function(req, res){
     // body part is taking a JsonData which should store in mailchamp server.
 
     var options = {
-        url: "https://us20.api.mailchimp.com/3.0/lists/",
+        url: "https://us20.api.mailchimp.com/3.0/lists/<list_id>",
         method: "POST",
         headers: {
-            "Authorization" : "Test "
+            "Authorization" : "Test <add ur API Key>"
         },
         body: jsonData
     };
