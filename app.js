@@ -40,10 +40,10 @@ app.post("/", function(req, res){
     // body part is taking a JsonData which should store in mailchamp server.
 
     var options = {
-        url: "https://us20.api.mailchimp.com/3.0/lists/578444c238",
+        url: "https://us20.api.mailchimp.com/3.0/lists/",
         method: "POST",
         headers: {
-            "Authorization" : "Test b47f81ed77d555209c324c8f4bf57e25-us20"
+            "Authorization" : "Test "
         },
         body: jsonData
     };
@@ -81,7 +81,6 @@ app.listen(process.env.PORT || 3000, function(){
 
 
 
-// mailchimp Api key = b47f81ed77d555209c324c8f4bf57e25-us20
-// List Id: 578444c238
+
 
 // https://git.heroku.com/boiling-tundra-36782.git
